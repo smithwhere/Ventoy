@@ -114,5 +114,5 @@ jobs:
           to: any@phone.eu.org
           from: 317718961@qq.com
           body: |
-            Hysteria Releases 同步已完成。
+            ${{ github.event.repository.name }} Releases 同步已完成。
             本次同步版本：${{ steps.sync.outputs.summary }}
