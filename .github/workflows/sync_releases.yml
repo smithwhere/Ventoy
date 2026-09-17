@@ -20,7 +20,7 @@ jobs:
 
             // 原仓库与你自己的仓库配置
             const upstreamOwner = "ventoy";
-            const upstreamRepo = "Ventoy";
+            const upstreamRepo = "hVentoy";
             const myOwner = context.repo.owner;
             const myRepo = context.repo.repo;
 
@@ -110,7 +110,7 @@ jobs:
           secure: true
           username: 317718961@qq.com
           password: ${{ secrets.QQ_SMTP_AUTH_CODE }}
-          subject: Hysteria Releases 同步完成
+          subject: ${{ github.event.repository.name }} Releases 同步完成
           to: any@phone.eu.org
           from: 317718961@qq.com
           body: |
